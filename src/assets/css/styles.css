@@ -1,0 +1,135 @@
+/*-----------------------------------------------*\
+  #ROOT
+\*-----------------------------------------------*/
+
+:root {
+    /**
+     * Colors
+     */
+
+    /* Primary */
+    --Dark-Blue-15: hsl(217, 28%, 15%); /* (intro and email sign up background) */
+    --Dark-Blue-13: hsl(218, 28%, 13%); /* (main background) */
+    --Dark-Blue-9: hsl(216, 53%, 9%);  /* (footer background) */
+    --Dark-Blue-18: hsl(219, 30%, 18%); /* (testimonials background) */
+
+    /* Accent */
+    --Cyan: hsl(176, 68%, 64%);     /* (inside call-to-action gradient) */
+    --Blue: hsl(198, 60%, 50%);     /* (inside call-to-action gradient) */
+    --Light-Red: hsl(0, 100%, 63%); /* (error) */
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+
+    /**
+     * Typography
+     */
+    
+    /* Body Copy */
+    --Font-size: 14px;
+
+    /* Headings - Call-to-actions - Header Navigation */
+    --font-family-full: "Raleway", sans-serif;
+
+    /* Body */
+    --font-family-body: "Open Sans", sans-serif;
+}
+
+
+
+
+
+/*-----------------------------------------------*\
+  #RESET
+\*-----------------------------------------------*/
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a,
+img,
+span,
+input,
+button { display: block; }
+
+a {
+    color: var(--White);
+    text-decoration: none;
+}
+
+img { height: auto; }
+
+input,
+button {
+    background: none;
+    border: none;
+}
+
+input {
+    width: 100%;
+    outline: none;
+}
+
+button { cursor: pointer; }
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--Font-size);
+    font-weight: bold;
+}
+
+body {
+    background-color: var(--Dark-Blue-15);
+    font-family: var(--font-family-body);
+    color: var(--White);
+}
+
+::selection {
+    background-color: var(--Cyan);
+    color: var(--Dark-Blue-9);
+}
+
+::-webkit-scrollbar {
+    background-color: var(--Dark-Blue-15);
+    width: 12px;
+}
+
+::-webkit-scrollbar-track { background-color: var(--Dark-Blue-13); }
+
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--Cyan) 0%, var(--Blue) 50%); }
+
+
+
+
+
+/*-----------------------------------------------*\
+  #DUBLICATE ITEM
+\*-----------------------------------------------*/
+
+.section { padding-block: 80px; }
+
+.container {
+    padding-inline: 16px;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container-in-main {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
